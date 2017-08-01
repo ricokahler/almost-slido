@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Almost Slido</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.0/css/bulma.min.css">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .section--content {
+      background-color: #eee;
+      flex: 1;
+      overflow: auto;
+    }
+
+    .section--question {
+      background-color: #eee;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">Almost Slido</a>
+    </div>
+    <div class="navbar-left">
+      <div class="field navbar-item">
+        <p class="control has-icons-left">
+          <input class="input" type="text" id="user" placeholder="Type a username">
+          <span class="icon is-small is-left">
+            <i class="fa fa-user"></i>
+          </span>
+        </p>
+      </div>
+    </div>
+  </nav>
+  <section class="section section--question">
+    <div class="container">
+      <form>
+        <textarea id="textarea" class="textarea" placeholder="Ask your question here"></textarea>
+        <button class="button is-primary">Ask!</button>
+      </form>
+    </div>
+  </section>
+  <section class="section section--content"></section>
+  <script src="almost-slido.js"></script>
+</body>
+
+</html>
