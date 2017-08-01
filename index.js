@@ -78,7 +78,7 @@ function makeEndPoint(name, valid) {
     dataStore.splice(indexToRemove, 1);
     res.send();
   });
-}
+} 
 
 makeEndPoint('question', question => question && question.user && question.userId && question.content);
 makeEndPoint('like', like => like && like.questionId && like.userId);
