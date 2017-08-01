@@ -35,9 +35,6 @@ function addQuestion(question) {
             </div>
           </nav>
         </div>
-        <div class="media-right">
-          <button class="delete"></button>
-        </div>
       </article>
     </div>
   `;
