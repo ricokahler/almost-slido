@@ -1,39 +1,30 @@
-# node-js-getting-started
+# Almost slido
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+The purpose of this app is to give you an end-to-end demo of a full-stack web application with as little code as possible.
 
-This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+This project is part of a talk on "Full stack web development: introduction and architecture". You can get the slides for that presentation [here](https://docs.google.com/presentation/d/13JmF5QTcGRlEulsf8M1p5Tyg7vDz-AXww15cBgl6x5g/edit?usp=sharing).
 
-## Running Locally
+# Code structure
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
+This project is split into two parts:
 
-```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
-$ npm install
-$ npm start
-```
+1. the client: [almost-slido.js](https://github.com/ricokahler/almost-slido/blob/master/public/almost-slido.js)
+2. the server: [index.js](https://github.com/ricokahler/almost-slido/blob/master/index.js)
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+There are two resources on the server which is `/api/questions` and `/api/likes`. Both resources support HTTP request methods `GET`, `POST`, `PUT`, and `DELETE`.
 
-## Deploying to Heroku
+The client simply uses those methods to persist data on the server.
 
-```
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
-or
+The server *does not* use a database and simply stores everything in memory. Once server is restarted, all the data is lost.
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+# Live demo
 
-## Documentation
+The live demo is available from heroku [here](https://polar-hollows-69274.herokuapp.com/).
 
-For more information about using Node.js on Heroku, see these Dev Center articles:
+# Where to go next
 
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+If you haven't already please see the slides that go along this presentation [here](https://docs.google.com/presentation/d/13JmF5QTcGRlEulsf8M1p5Tyg7vDz-AXww15cBgl6x5g/edit?usp=sharing).
+
+After that see [this google doc on where to learn more](https://goo.gl/sZ2KrT).
+
+Thank you!
